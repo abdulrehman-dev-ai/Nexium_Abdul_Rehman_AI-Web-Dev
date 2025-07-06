@@ -1,83 +1,118 @@
-# Nexium AI Web Dev Internship - Assignment 1
+# 🚀 Nexium AI Web Dev Internship – Assignment 1
 
-## 📌 Project: Quote Generator
-
-This is a simple quote generator app built using **Next.js 15**, **TypeScript**, **Tailwind CSS**, and **ShadCN UI** as part of the Nexium AI-Enhanced Web Development Internship (Week 1 Assignment).
-
-Users can enter a topic and get relevant motivational quotes.
+**✅ Project:** *Quote Generator App*  
+**📅 Internship:** Nexium AI-Enhanced Web Development Summer Internship 2025  
+**🗂️ Assignment:** Week 1 – Frontend Foundations
 
 ---
 
-## 🚀 Features
+## ✨ Overview
 
-- 🔍 Search quotes by topic (`inspiration`, `life`, or `success`)
-- 💅 Styled with TailwindCSS & ShadCN UI components
-- 🎭 Smooth animations using Framer Motion
-- ⚛️ Built with React Server Components + Next.js App Router
+This is **Assignment 1** for the Nexium AI Web Development Internship. It is a simple **Quote Generator** built with:
 
----
+- **Next.js 15 (App Router)**
+- **TypeScript**
+- **Tailwind CSS**
+- **ShadCN UI**
+- **Framer Motion** for animations
 
-## 💻 Tech Stack
-
-- [Next.js 15](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [TailwindCSS](https://tailwindcss.com/)
-- [ShadCN UI](https://ui.shadcn.dev/)
-- [Framer Motion](https://www.framer.com/motion/)
+Users can enter a topic (e.g., *inspiration*, *life*, *success*) and generate relevant motivational quotes with smooth, animated cards.
 
 ---
 
-## 🧠 Topics Available
+## 💻 Features
 
+✅ Enter a topic and get multiple quotes  
+✅ Animated quote cards (fade/slide in)  
+✅ Fully responsive layout with TailwindCSS  
+✅ Polished UI with ShadCN components  
+✅ Clean, modular Next.js structure  
+
+---
+
+## 🔗 Live Demo
+
+👉 [**View on Vercel**](https://nexium-abdul-rehman-ai-web-dev.vercel.app/assignment-1)
+
+---
+
+## 🧭 How to Use
+
+1️⃣ Open the app in your browser.  
+2️⃣ Type a topic in the input field:  
 - `inspiration`
 - `life`
-- `success`
+- `success`  
 
-Try typing one of them and hit `Generate Quotes` to see results.
+3️⃣ Click **Generate Quotes**.  
+4️⃣ Enjoy the animated, styled results!
 
 ---
 
 ## 📸 Screenshots
 
-| Input | Result |
-|-------|--------|
-| ![Input](public/screenshots/input.png) | ![Output](public/screenshots/output.png) |
+_(Optional: Add these in your repo under /public/screenshots and update the links below)_
 
-_(Optional: Add screenshots if possible)_
+| **Input**                             | **Result**                              |
+| -------------------------------------- | --------------------------------------- |
+| ![Input](public/screenshots/input.png) | ![Output](public/screenshots/output.png) |
 
 ---
 
 ## 🧪 Run Locally
 
-1. Clone the repo:
+Clone the repo and install dependencies:
+
 ```bash
 git clone https://github.com/abdulrehman-dev-ai/Nexium_Abdul_Rehman_AI-Web-Dev.git
 cd Nexium_Abdul_Rehman_AI-Web-Dev
-Install dependencies:
-
-bash
-Copy
-Edit
 npm install
-Run the dev server:
-
-bash
-Copy
-Edit
 npm run dev
-Open http://localhost:3000/assignment-1 in your browser.
+```
 
-📍 Assignment Location
-Navigate to:
+Then visit:
 
-bash
-Copy
-Edit
-src/app/assignment-1/page.tsx
-🧑‍💻 Developed by
-Abdul Rehman
-Nexium Intern | AI Web Dev Bootcamp 2025
+```
+http://localhost:3000/assignment-1
+```
 
-🌐 Live Demo
-View on Vercel →
+---
 
+## 🗂️ Project Structure
+
+```
+src/
+  app/
+    assignment-1/
+      page.tsx   ← Main assignment file
+  components/
+    ui/
+      button.tsx
+      input.tsx
+      card.tsx
+```
+
+---
+
+## ⚡ Tech Stack
+
+- Next.js 15
+- TypeScript
+- Tailwind CSS
+- ShadCN UI
+- Framer Motion
+
+---
+
+## 🙋 About the Author
+
+**Abdul Rehman**  
+Nexium AI Web Dev Intern, Summer 2025  
+Email: abdul@example.com  
+GitHub: [abdulrehman-dev-ai](https://github.com/abdulrehman-dev-ai)
+
+---
+
+## 📜 License
+
+This project is for educational use as part of the Nexium AI
