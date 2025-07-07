@@ -32,7 +32,7 @@ Users can enter a topic (e.g., *inspiration*, *life*, *success*) and generate re
 
 ## 🔗 Live Demo
 
-👉 [**View on Vercel**](https://nexium-abdul-rehman-ai-web-dev.vercel.app/assignment-1)
+👉 [**View on Vercel**](https://nexium-abdul-rehman-quote-generator-delta.vercel.app/)
 
 ---
 
@@ -51,11 +51,11 @@ Users can enter a topic (e.g., *inspiration*, *life*, *success*) and generate re
 
 ## 📸 Screenshots
 
-_(Optional: Add these in your repo under /public/screenshots and update the links below)_
+
 
 | **Input**                             | **Result**                              |
 | -------------------------------------- | --------------------------------------- |
-| ![Input](public/screenshots/input.png) | ![Output](public/screenshots/output.png) |
+| ![Input](public/images/home1.png) | ![Output](public/images/2.png) |
 
 ---
 
@@ -64,7 +64,7 @@ _(Optional: Add these in your repo under /public/screenshots and update the link
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/abdulrehman-dev-ai/Nexium_Abdul_Rehman_AI-Web-Dev.git
+git clone https://github.com/abdulrehman-dev-ai/Nexium_Abdul_Rehman_AI-Web-Dev
 cd Nexium_Abdul_Rehman_AI-Web-Dev
 npm install
 npm run dev
@@ -82,14 +82,25 @@ http://localhost:3000/assignment-1
 
 ```
 src/
-  app/
-    assignment-1/
-      page.tsx   ← Main assignment file
-  components/
-    ui/
-      button.tsx
-      input.tsx
-      card.tsx
+│   middleware.ts
+│
+├───app
+│   │   favicon.ico
+│   │   globals.css
+│   │   layout.tsx
+│   │   page.tsx
+│   │
+│   └───assignment-1
+│           page.tsx
+│
+├───components
+│   └───ui
+│           button.tsx
+│           card.tsx
+│           input.tsx
+│
+└───lib
+        utils.ts
 ```
 
 ---
