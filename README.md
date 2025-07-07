@@ -16,13 +16,13 @@ This is **Assignment 1** for the Nexium AI Web Development Internship. It is a s
 - **ShadCN UI**
 - **Framer Motion** for animations
 
-Users can enter a topic (e.g., *inspiration*, *life*, *success*) and generate relevant motivational quotes with smooth, animated cards.
+Users can select a topic (e.g., *inspiration*, *life*, *success*) and generate relevant motivational quotes with smooth, animated cards.
 
 ---
 
 ## 💻 Features
 
-✅ Enter a topic and get multiple quotes  
+✅ Select a topic and get multiple quotes  
 ✅ Animated quote cards (fade/slide in)  
 ✅ Fully responsive layout with TailwindCSS  
 ✅ Polished UI with ShadCN components  
@@ -39,7 +39,7 @@ Users can enter a topic (e.g., *inspiration*, *life*, *success*) and generate re
 ## 🧭 How to Use
 
 1️⃣ Open the app in your browser.  
-2️⃣ Type a topic in the input field:  
+2️⃣ Select a topic from dropdown field:  
 - `inspiration`
 - `life`
 - `success`  
@@ -119,7 +119,7 @@ src/
 
 **Abdul Rehman**  
 Nexium AI Web Dev Intern, Summer 2025  
-Email: abdul@example.com  
+Email: iamabdulrehman.technophile@gmail.com 
 GitHub: [abdulrehman-dev-ai](https://github.com/abdulrehman-dev-ai)
 
 ---
