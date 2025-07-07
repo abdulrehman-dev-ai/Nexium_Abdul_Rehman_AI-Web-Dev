@@ -25,11 +25,11 @@ const QUOTES = {
 };
 
 export default function Assignment1Page() {
-  const [topic, setTopic] = useState("");
+  const [topic, setTopic] = useState("inspiration");
   const [quotes, setQuotes] = useState<string[]>([]);
 
   const handleGenerate = () => {
-    const selectedQuotes = QUOTES[topic.toLowerCase() as keyof typeof QUOTES] || [
+    const selectedQuotes = QUOTES[topic as keyof typeof QUOTES] || [
       "No quotes found for this topic."
     ];
     setQuotes(selectedQuotes);
@@ -39,11 +39,15 @@ export default function Assignment1Page() {
     <main className="max-w-xl mx-auto p-6 space-y-6">
       <h1 className="text-3xl font-bold text-center">Assignment 1: Quote Generator</h1>
       <div className="space-y-4">
-        <Input
-          placeholder="Enter topic (e.g., inspiration, life, success)"
+        <select
+          className="w-full border rounded px-3 py-2"
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
-        />
+        >
+          <option value="inspiration">Inspiration</option>
+          <option value="life">Life</option>
+          <option value="success">Success</option>
+        </select>
         <Button onClick={handleGenerate} className="transition-all duration-300 hover:scale-105">
           Generate Quotes
         </Button>
@@ -53,26 +57,14 @@ export default function Assignment1Page() {
         <div className="space-y-4">
           {quotes.map((quote, idx) => (
             <motion.div
-              key={idx}
+              key={quote + idx}
               initial={{ opacity: 0, scale: 0.8, y: 20 }}
-              animate={{ 
-                opacity: 1, 
-                scale: 1, 
-                y: 0,
-                transition: {
-                  delay: idx * 0.15,
-                  duration: 0.5,
-                  ease: [0.23, 1, 0.32, 1]
-                }
-              }}
-              exit={{ 
-                opacity: 0, 
-                scale: 0.8, 
-                y: -20,
-                transition: {
-                  duration: 0.3,
-                  ease: "easeInOut"
-                }
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.8, y: -20 }}
+              transition={{
+                delay: idx * 0.15,
+                duration: 0.5,
+                ease: [0.23, 1, 0.32, 1]
               }}
             >
               <Card>
