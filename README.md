@@ -55,7 +55,7 @@ Users can select a topic (e.g., *inspiration*, *life*, *success*) and generate r
 
 | **Input**                             | **Result**                              |
 | -------------------------------------- | --------------------------------------- |
-| ![Input](public/images/home1.png) | ![Output](public/images/2.png) |
+| ![Input](public/images/input.png) | ![Output](public/images/output.png) |
 
 ---
 
