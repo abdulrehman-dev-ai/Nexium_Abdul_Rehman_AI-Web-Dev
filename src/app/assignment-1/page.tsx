@@ -36,44 +36,76 @@ export default function Assignment1Page() {
   };
 
   return (
-    <main className="max-w-xl mx-auto p-6 space-y-6">
-      <h1 className="text-3xl font-bold text-center">Assignment 1: Quote Generator</h1>
-      <div className="space-y-4">
-        <select
-          className="w-full border rounded px-3 py-2"
-          value={topic}
-          onChange={(e) => setTopic(e.target.value)}
-        >
-          <option value="inspiration">Inspiration</option>
-          <option value="life">Life</option>
-          <option value="success">Success</option>
-        </select>
-        <Button onClick={handleGenerate} className="transition-all duration-300 hover:scale-105">
-          Generate Quotes
-        </Button>
-      </div>
+    <div className="relative min-h-screen overflow-hidden">
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="fixed top-0 left-0 w-full h-full object-cover z-0"
+      >
+        <source src="/images/mylivewallpapers-bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-      <AnimatePresence mode="wait">
+      {/* Overlay for readability */}
+      <div className="fixed top-0 left-0 w-full h-full bg-black/40 z-10 pointer-events-none"></div>
+
+      {/* Main Content */}
+      <main className="relative z-20 max-w-xl mx-auto p-6 space-y-6">
+        <h1
+          className="text-3xl font-bold text-center  text-white rounded-lg px-4 py-2 shadow-lg"
+          style={{ textShadow: "0 2px 8px rgba(255, 255, 255, 0.7)" }}
+        >
+          Assignment 1: Quote Generator
+        </h1>
         <div className="space-y-4">
-          {quotes.map((quote, idx) => (
-            <motion.div
-              key={quote + idx}
-              initial={{ opacity: 0, scale: 0.8, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.8, y: -20 }}
-              transition={{
-                delay: idx * 0.15,
-                duration: 0.5,
-                ease: [0.23, 1, 0.32, 1]
-              }}
-            >
-              <Card>
-                <CardContent className="p-4">{quote}</CardContent>
-              </Card>
-            </motion.div>
-          ))}
+          <select
+            className="w-full bg-white/20 backdrop-blur-lg border border-white/30 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-lg px-3 py-2 shadow-lg transition-all duration-300"
+            style={{
+              WebkitTextFillColor: "white", // Ensures text is always white
+              fontWeight: "500",
+              fontSize: "1.1rem",
+              letterSpacing: "0.02em"
+            }}
+            value={topic}
+            onChange={(e) => setTopic(e.target.value)}
+          >
+            <option className="bg-black/60 text-white" value="inspiration">Inspiration</option>
+            <option className="bg-black/60 text-white" value="life">Life</option>
+            <option className="bg-black/60 text-white" value="success">Success</option>
+          </select>
+          <Button
+            onClick={handleGenerate}
+            className="bg-white/10 backdrop-blur border border-white/30 text-white font-semibold px-4 py-2 rounded-lg shadow-lg transition-all duration-300 hover:bg-white/20 hover:scale-105"
+          >
+            Generate Quotes
+          </Button>
         </div>
-      </AnimatePresence>
-    </main>
+
+        <AnimatePresence mode="wait">
+          <div className="space-y-4">
+            {quotes.map((quote, idx) => (
+              <motion.div
+                key={quote + idx}
+                initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.8, y: -20 }}
+                transition={{
+                  delay: idx * 0.15,
+                  duration: 0.5,
+                  ease: [0.23, 1, 0.32, 1]
+                }}
+              >
+                <Card className="bg-white/10 backdrop-blur border border-white/30 rounded-xl shadow-lg">
+                  <CardContent className="p-4 text-white">{quote}</CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </AnimatePresence>
+      </main>
+    </div>
   );
 }
