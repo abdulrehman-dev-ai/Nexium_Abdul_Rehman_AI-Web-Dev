@@ -12,7 +12,7 @@ export function middleware(request: NextRequest) {
 
   // Default redirect (for root only)
   if (pathname === '/') {
-    return NextResponse.redirect(new URL('/assignment-2', request.url));
+    return NextResponse.redirect(new URL('/assignment-1', request.url));
   }
 
   return NextResponse.next();
