@@ -182,7 +182,7 @@ export default function Assignment1Page() {
                   >
                     <Card className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg overflow-hidden">
                       <CardContent className="p-6 text-lg text-white italic text-center">
-                        "{quote}"
+                        {quote}
                       </CardContent>
                     </Card>
                   </motion.div>
@@ -195,26 +195,25 @@ export default function Assignment1Page() {
 
       {/* Footer */}
       <footer className="relative z-20 mt-4 text-center p-4 text-sm text-white/70">
-  Developed with dedication by{" "}
-  <a
-    href="https://abdulrehmansarwar.vercel.app/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-purple-400 hover:underline font-semibold"
-  >
-    Abdul Rehman
-  </a>{" "}
-  as part of a{" "}
-  <a
-    href="https://www.nexium.ltd/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-purple-400 hover:underline font-semibold"
-  >
-    Nexium Software Internship Project
-  </a>.
-</footer>
-
+        Developed with dedication by{" "}
+        <a
+          href="https://abdulrehmansarwar.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-purple-400 hover:underline font-semibold"
+        >
+          Abdul Rehman
+        </a>{" "}
+        as part of a{" "}
+        <a
+          href="https://www.nexium.ltd/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-purple-400 hover:underline font-semibold"
+        >
+          Nexium Software Internship Project
+        </a>.
+      </footer>
     </div>
   );
 }
