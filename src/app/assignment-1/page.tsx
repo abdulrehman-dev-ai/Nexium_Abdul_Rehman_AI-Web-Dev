@@ -194,27 +194,27 @@ export default function Assignment1Page() {
       </main>
 
       {/* Footer */}
-      <footer className="relative z-10 text-center p-4 text-sm text-white/70">
-        Built with passion by{" "}
-        <a
-          href="https://abdulrehmansarwar.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-purple-400 hover:underline font-semibold"
-        >
-          Abdul Rehman
-        </a>{" "}
-        for the{" "}
-        <a
-          href="https://www.nexium.ltd/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-purple-400 hover:underline font-semibold"
-        >
-          Nexium Software Internship Project
-        </a>
-        .
-      </footer>
+      <footer className="relative z-20 mt-4 text-center p-4 text-sm text-white/70">
+  Developed with dedication by{" "}
+  <a
+    href="https://abdulrehmansarwar.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-purple-400 hover:underline font-semibold"
+  >
+    Abdul Rehman
+  </a>{" "}
+  as part of a{" "}
+  <a
+    href="https://www.nexium.ltd/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-purple-400 hover:underline font-semibold"
+  >
+    Nexium Software Internship Project
+  </a>
+  {"."}
+</footer>
     </div>
   );
 }
