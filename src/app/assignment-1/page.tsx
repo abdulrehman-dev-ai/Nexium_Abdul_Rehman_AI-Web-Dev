@@ -212,9 +212,9 @@ export default function Assignment1Page() {
     className="text-purple-400 hover:underline font-semibold"
   >
     Nexium Software Internship Project
-  </a>
-  {"."}
+  </a>.
 </footer>
+
     </div>
   );
 }
